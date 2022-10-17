@@ -18,4 +18,5 @@ const something = {
     multiply : multiply
 }
 
-console.log(something);
+const result = something.multiply(12,13);
+console.log(result);
