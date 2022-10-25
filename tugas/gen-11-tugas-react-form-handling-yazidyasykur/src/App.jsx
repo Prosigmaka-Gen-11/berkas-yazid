@@ -1,11 +1,14 @@
+import ClassForm from "./components/ClassForm"
 import FunctionForm from "./components/FunctionForm"
+import "./App.css"
 
 
 function App() {
  
   return (
-    <div>
-      <FunctionForm />
+    <div className="container">
+      <FunctionForm className="functioncomp"/>
+      <ClassForm  class="classcomp"/>
     </div>
   )
 }

@@ -32,10 +32,10 @@ export default function FunctionForm() {
 	}
 
     return (
-        <div>
+        <div className="functioncomp">
             <h1>Function Component Form</h1>
 
-        <form onSubmit={() => handleSubmit(event)}>
+        <form onSubmit={() => handleSubmit(event)} className="functionForm">
             <label>
                 Pokemon Name :
                 <input type="text" value={input.name} onChange={event => handleFormInput(event, 'name')}/>
