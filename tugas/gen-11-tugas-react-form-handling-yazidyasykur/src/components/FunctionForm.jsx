@@ -18,7 +18,7 @@ export default function FunctionForm() {
     ]
 
     const {input, handleFormInput} = useForm({
-        name: "AA",
+        name: "",
         catchDate : "",
         gender : "",
         type: [],
@@ -105,6 +105,15 @@ export default function FunctionForm() {
 
             <button>Submit</button>
             </form>
+
+            <div>
+                Name : {input.name} <br/>
+                Catch Date : {input.catchDate} <br/>
+                Gender : {input.gender} <br/>
+                Type : {input.type.toString()} <br/>
+                Base : {input.base} <br/>
+                Description : {input.description} <br/>
+            </div>
         </div>
     )
 }

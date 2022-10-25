@@ -13,7 +13,10 @@ export default function useForm(data) {
                 setInput({ ...input, [propertyName]: array}) 
             } else {
                 let array = input.type
-                array.pop()
+                var index = array.indexOf(event.target.value);
+                if (index !== -1) {
+                array.splice(index, 1);
+                }
                 setInput({ ...input, [propertyName]: array}) 
             }
         }
