@@ -1,0 +1,18 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.asyncawait {
+  flex-basis: 50%;
+  border: 2px;
+}
+
+.thencatch {
+  flex-basis: 50%;
+}

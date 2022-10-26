@@ -7,8 +7,8 @@ function App() {
  
   return (
     <div className="container">
-      <FunctionForm className="functioncomp"/>
-      <ClassForm  class="classcomp"/>
+      <FunctionForm />
+      <ClassForm />
     </div>
   )
 }
