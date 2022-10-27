@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
+import axios from 'axios';
 
 export default function AsyncAwait() {
+
 
     const [allDaerah, setAllDaerah] = useState([])
     const [lokasi, setLokasi] = useState("1301")
@@ -9,9 +11,8 @@ export default function AsyncAwait() {
     useEffect(() => {
 
         async function fetchAllDaerah() {
-            const data = await fetch("https://api.myquran.com/v1/sholat/kota/semua");
-            const json = await data.json();
-            setAllDaerah(json)
+            const daerah = await axios.get("https://api.myquran.com/v1/sholat/kota/semua")
+            setAllDaerah(daerah.data)
         }
 
         fetchAllDaerah();
@@ -24,9 +25,8 @@ export default function AsyncAwait() {
         const year = date.getFullYear();
 
         async function fetchJadwal() {
-            const data = await fetch(`https://api.myquran.com/v1/sholat/jadwal/${lokasi}/${year}/${month}/${day}`);
-            const json = await data.json();
-            setWaktu(json.data.jadwal)
+            const jadwal = await axios.get(`https://api.myquran.com/v1/sholat/jadwal/${lokasi}/${year}/${month}/${day}`);
+            setWaktu(jadwal.data.data.jadwal)
         }
 
         fetchJadwal();

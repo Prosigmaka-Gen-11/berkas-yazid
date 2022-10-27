@@ -1,0 +1,59 @@
+{
+  "pokemon": [
+    {
+      "name": "Pikachu",
+      "catchDate": "2022-10-26",
+      "gender": "F",
+      "type": [
+        "Electric"
+      ],
+      "base": "Animal",
+      "description": "A Yellow-black raccoon with electrical power",
+      "id": 1
+    },
+    {
+      "name": "Squirtle",
+      "catchDate": "2022-10-18",
+      "gender": "M",
+      "type": [
+        "Water"
+      ],
+      "base": "Animal",
+      "description": "A water dispenser blue turtle",
+      "id": 2
+    },
+    {
+      "name": "Charmander",
+      "catchDate": "2022-10-19",
+      "gender": "M",
+      "type": [
+        "Fire"
+      ],
+      "base": "Animal",
+      "description": "A \"lit\" dinosaur",
+      "id": 3
+    },
+    {
+      "name": "Magikarp",
+      "catchDate": "2022-10-10",
+      "gender": "M",
+      "type": [
+        "Water"
+      ],
+      "base": "Animal",
+      "description": "useless karp fish, but sure it has huge hidden power",
+      "id": 4
+    },
+    {
+      "name": "Lickitung",
+      "catchDate": "2022-10-22",
+      "gender": "M",
+      "type": [
+        "Normal"
+      ],
+      "base": "Animal",
+      "description": "A disgusting pokemon, licks people",
+      "id": 5
+    }
+  ]
+}
