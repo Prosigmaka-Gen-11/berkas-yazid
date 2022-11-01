@@ -4,16 +4,16 @@ import { useContext } from "react";
 export default function List() {
   const context = useContext(JournalContext);
 
-  async function deleteHandler(id) {
+  function deleteHandler(id) {
     const copy = context.journal;
     const filtered = copy.filter((item) => item.id != id);
-    await context.setJournal(filtered);
+    context.setJournal(filtered);
   }
 
-  async function editHandler(id) {
+  function editHandler(id) {
     const copy = context.journal;
     const filtered = copy.filter((item) => item.id === id);
-    await context.setForm(filtered[0]);
+    context.setForm(filtered[0]);
   }
 
   return (

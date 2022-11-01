@@ -29,18 +29,18 @@ export default function Form() {
     }
   }
 
-  async function submitHandler(event) {
+  function submitHandler(event) {
     event.preventDefault();
 
     if (context.form.id) {
       const copy = context.journal;
       const filtered = copy.filter((item) => item.id != context.form.id);
-      await context.setJournal([...filtered, context.form]);
+      context.setJournal([...filtered, context.form]);
     } else {
-      await context.setJournal([...context.journal, context.form]);
+      context.setJournal([...context.journal, context.form]);
     }
 
-    await context.setForm(initial);
+    context.setForm(initial);
   }
 
   const initial = {
