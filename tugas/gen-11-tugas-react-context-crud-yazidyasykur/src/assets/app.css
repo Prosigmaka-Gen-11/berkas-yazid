@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
