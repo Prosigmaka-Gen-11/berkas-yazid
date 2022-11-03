@@ -4,12 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Menu() {
   const auth = useSelector((state) => state.auth);
 
-  const { userData, token } = auth;
-
   return (
     <div className="container">
       <h3>
-        Hello, {userData.firstName} {userData.lastName}
+        Hello, {auth.userData.firstName} {auth.userData.lastName}
       </h3>
       <h5>What are you looking for?</h5>
       <ul>
